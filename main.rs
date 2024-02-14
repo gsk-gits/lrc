@@ -105,7 +105,7 @@ fn withdraw(lrc: &str, lrcTranslateLyric: &str) -> Vec<Vec<String>> {
             .into_iter()
             .enumerate()
             .map(|(index, statement)| {
-                //考虑大部分歌词所得到的最佳索引3，其他也不是没可能，概况小
+                
                 if index < 3 {
                     //println!("{}", statement);
                     parsing_section(statement)
