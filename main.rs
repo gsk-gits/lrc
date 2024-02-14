@@ -141,7 +141,7 @@ fn batch_processing(folder_path: &str) -> LyricList {
 }
 
 fn main() {
-    let a = batch_processing("./Lyric");
+    let a = batch_processing("./Lyric");//存放歌词文件夹路径
     for i in 0..a.lyric.len() {
         println!("--------------------翻译----------------------");
         for k in a.lyric[i].lrcTranslateLyric.iter() {
